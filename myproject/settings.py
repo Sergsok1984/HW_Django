@@ -22,9 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-jn12g)+0pv53uk+)$77(x42^nrk%ich7b#745&7w##iknfc%$s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
+DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
@@ -42,11 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'my_app',
     'HW2_app',
-    'debug_toolbar'
 ]
 
 MIDDLEWARE = [
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
